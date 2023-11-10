@@ -2,6 +2,16 @@
 
 {% block content %}
 	<div class="container">
-	{{ content | safe }}
+		<div class="row">
+			<div class="col-md-6 offset-md-3"> <img class="w-100 mx-auto d-block"
+				style="max-width: 400px;padding: 20px;padding-top: 1vh;"
+				src="{{ url_for('views.themes', path='img/banner.png') }}" />
+			  <h3 class="text-center">
+				<p style="color: white; font-weight: bold; font-size: 26px;">
+					¡CTF Internacional MetaRed 2023  5th Stage!
+				</p>
+			  </h3> <br>
+			</div>
+		  </div>
 	</div>
 {% endblock %}
